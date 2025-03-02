@@ -26,10 +26,15 @@
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
                 <p>Are you satisfied with the recent updates?</p>
+<div class="radio-group">
+    <label><input type="radio" name="satisfaction" value="yes"> Yes</label>
+    <label><input type="radio" name="satisfaction" value="no"> No</label>
+</div>
+
+                <!-- <p>Are you satisfied with the recent updates?</p>
                 <label><input type="radio" name="satisfaction" value="yes"> Yes</label>
-                <label><input type="radio" name="satisfaction" value="no"> No</label>
+                <label><input type="radio" name="satisfaction" value="no"> No</label> -->
 
                 <label for="feature">Preferred Feature:</label>
                 <select id="feature" name="feature">
@@ -40,8 +45,8 @@
 
                 <label for="comments">Additional Comments:</label>
                 <textarea id="comments" name="comments"></textarea>
-
-                <button type="submit">Submit Feedback</button>
+                <button type="submit">Submit Feedback
+                </button>
             </form>
         </article>
     </section>

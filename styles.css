@@ -1,86 +1,101 @@
-/* Futuristic Design for Feedback Form */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Exo:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Exo:wght@400;700&display=swap');
 body {
-    font-family: 'Orbitron', sans-serif;
-    background-color: #241b3b;
-    color: #fbfbf8;
+    font-family: 'Orbitron',sans-serif;
+    background: linear-gradient(to right, #150f2e, #21203e, #222541);
+    color: #8d6aca;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.8;
 }
+
 h1, h2 {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Exo', sans-serif; 
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
 }
 
-p, label, input, select, textarea, button {
-    font-family: 'Orbitron', sans-serif;
-}
-
-header {
-    background-color: #241b3b;
-    padding: 20px;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
+/* Navigation Bar */
 nav ul {
+    display: flex;
     list-style: none;
+    justify-content: center;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fbfbf8;
+    color: #0ff0fc;
     text-decoration: none;
 }
 
-#feedback-form {
-    background-color: #1a2a55;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    margin: 50px auto;
-    box-shadow: 0px 0px 15px #fbfbf8;
+/* Container & Form Styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
 
-/* h1, h2 {
-    color: #fbfbf8;
-} */
+#feedback-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 input, select, textarea {
-    display: block;
-    width: 90%;
+    width: 100%;
     padding: 10px;
-    margin: 10px auto;
-    border: 1px solid #fbfbf8;
-    background: #09080d;
-    color: #fbfbf8;
+    border: none;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
 }
 
 button {
-    background-color: #fbfbf8;
-    color: #09080d;
-    padding: 10px 20px;
+    background: #0ff0fc;
+    color: black;
+    padding: 10px;
     border: none;
-    cursor: pointer;
-    font-size: 16px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self:middle;
 }
 
 button:hover {
-    background-color: #ffcc00;
+    align-self: center;    
+    background: #0ff0fc;
+    color: black;
+    box-shadow: 0 0 10px #0ff0fc;
+    align-self:middle;
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
-footer {
-    background-color: #09080d;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    #feedback-form {
+        width: 100%;
+    }
 }

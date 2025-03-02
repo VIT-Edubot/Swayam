@@ -1,0 +1,86 @@
+/* Futuristic Design for Feedback Form */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Exo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #241b3b;
+    color: #fbfbf8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1, h2 {
+    font-family: 'Exo', sans-serif;
+}
+
+p, label, input, select, textarea, button {
+    font-family: 'Orbitron', sans-serif;
+}
+
+header {
+    background-color: #241b3b;
+    padding: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fbfbf8;
+    text-decoration: none;
+}
+
+#feedback-form {
+    background-color: #1a2a55;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px #fbfbf8;
+}
+
+/* h1, h2 {
+    color: #fbfbf8;
+} */
+
+input, select, textarea {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #fbfbf8;
+    background: #09080d;
+    color: #fbfbf8;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fbfbf8;
+    color: #09080d;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+footer {
+    background-color: #09080d;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

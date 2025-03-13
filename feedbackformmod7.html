@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Employee Feedback Form</h1>
+    </header>
+
+    <section>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Are you satisfied with the company policies?</p>
+            <div>
+                <label><input type="radio" name="satisfaction" value="yes"> Yes</label>
+                <label><input type="radio" name="satisfaction" value="no"> No</label>
+            </div>
+
+            <p>Select your rating (1-5):</p>
+            <div id="ratingGroup">
+                <label><input type="radio" name="rating" value="1"> 1</label>
+                <label><input type="radio" name="rating" value="2"> 2</label>
+                <label><input type="radio" name="rating" value="3"> 3</label>
+                <label><input type="radio" name="rating" value="4"> 4</label>
+                <label><input type="radio" name="rating" value="5"> 5</label>
+            </div>
+
+            <p id="ratingMessage"></p>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+            <button type="reset" id="resetButton">Reset</button>
+        </form>
+    </section>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
